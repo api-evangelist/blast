@@ -1,7 +1,25 @@
 aid: blast
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blast.png
 name: BLAST
-description: 'BLAST is a company surfaced as a portfolio company of creandum and added to the API Evangelist
-  network as a stub for enrichment. Sector: other. This profile is a lead awaiting the enrichment pipeline.'
+description: 'BLAST is a Danish esports and gaming entertainment company headquartered in Copenhagen,
+  founded in 2016. It produces and operates premier competitive gaming tournaments and leagues
+  (notably Counter-Strike BLAST Premier) and runs the blast.tv streaming and fan-engagement
+  platform, delivering live events, broadcasts, and interactive esports content to a global
+  audience. Backed by Creandum, Heartcore, Maki.vc, and Vaekstfonden, BLAST was added to the
+  API Evangelist network as a portfolio-lead company. No public developer API, portal, or
+  documentation surface was found during enrichment; this profile captures verifiable identity
+  and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/blast/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Other
+- Esports
+- Gaming
+- Entertainment
+- Media
+- Streaming
+- Events
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blast-domain-security.yml
+- type: Website
+  url: https://blast.tv/
 - type: Website
   url: https://blastpremier.com/
+- type: PrivacyPolicy
+  url: https://blast.tv/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
